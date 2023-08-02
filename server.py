@@ -16,7 +16,9 @@ def greeting():
 @app.route("/calculator/add", methods=['POST'])
 def add():
     numbers = request.json
-    response = Result(numbers['first'] + numbers['second'])
+    f1=numbers['first']
+    f2=numbers['second']
+    response = Result(f1 + f2)
     return jsonify(response)
 
 @app.route("/calculator/subtract", methods=['POST'])

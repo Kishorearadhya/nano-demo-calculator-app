@@ -1027,11 +1027,11 @@ namespace sha1
 #ifndef ASIO_STANDALONE
 #define ASIO_STANDALONE
 #endif
-#include <asio.hpp>
+// #include <asio.hpp>
 #ifdef CROW_ENABLE_SSL
 #include <asio/ssl.hpp>
 #endif
-#include <asio/version.hpp>
+// #include <asio/version.hpp>
 #if ASIO_VERSION >= 101300 // 1.13.0
 #define GET_IO_SERVICE(s) ((asio::io_context&)(s).get_executor().context())
 #else
@@ -2490,7 +2490,7 @@ constexpr crow::HTTPMethod operator"" _method(const char* str, size_t /*len*/)
 #ifndef ASIO_STANDALONE
 #define ASIO_STANDALONE
 #endif
-#include <asio.hpp>
+// #include <asio.hpp>
 
 
 namespace crow
@@ -8838,8 +8838,8 @@ namespace crow
 #ifndef ASIO_STANDALONE
 #define ASIO_STANDALONE
 #endif
-#include <asio.hpp>
-#include <asio/basic_waitable_timer.hpp>
+// #include <asio.hpp>
+// #include <asio/basic_waitable_timer.hpp>
 
 #include <chrono>
 #include <functional>
@@ -8973,7 +8973,7 @@ namespace crow
 #ifndef ASIO_STANDALONE
 #define ASIO_STANDALONE
 #endif
-#include <asio.hpp>
+// #include <asio.hpp>
 #include <atomic>
 #include <chrono>
 #include <vector>
@@ -10352,7 +10352,7 @@ namespace crow
 #ifndef ASIO_STANDALONE
 #define ASIO_STANDALONE
 #endif
-#include <asio.hpp>
+// #include <asio.hpp>
 #ifdef CROW_ENABLE_SSL
 #include <asio/ssl.hpp>
 #endif
